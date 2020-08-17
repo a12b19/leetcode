@@ -27,31 +27,7 @@ void test01() {
 }
 int main()
 {
-    const char str[] = "http://www[runoob]com";
-    const char ch = '[';
-    char* ret;
 
-    ret = strchr(str, ch);
-
-    printf("|%c| 之后的字符串是 - |%s|\n", ch, ret);
-    const char tag_name[] = "Program:MainProgram.datagrop1[439]";
-
-
-    char* open_bracket = str;
-    char* close_bracket = str;
-    open_bracket = strchr(tag_name, '[');
-    close_bracket = strchr(tag_name, ']');
-    printf("\t\t\t\t\[==%s   ]==%s\n", open_bracket, close_bracket);
-    char index_str[10];
-    strcpy(index_str, open_bracket+1);
-    int i;
-    for (i = 0; index_str[i] != ']'; i++);
-    index_str[i] = '\0';
-    int index = atoi(index_str);
-    char* index_temp;
-    index_temp = open_bracket + 1;
-    printf("indedx==%s\n", index_temp);
-    //test01();
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
